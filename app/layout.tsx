@@ -1,5 +1,7 @@
 "use client"
 import "../styles/globals.css"
+import Navbar from "@/components/Navbar"
+import { ThemeProvider } from 'next-themes'
 
 
 export default function RootLayout({
@@ -8,6 +10,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <h1>hi</h1>
+    <html lang="en">
+      <head />
+      <body>
+        <ThemeProvider enableSystem={true} attribute="class">
+          <Navbar />
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
   )
 }
