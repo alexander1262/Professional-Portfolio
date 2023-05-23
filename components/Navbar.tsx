@@ -22,6 +22,10 @@ const NAV_ITEMS: Array<NavItem> = [
         label: 'Projects',
         page: 'projects',
     },
+    {
+        label: 'Contact',
+        page: 'contact',
+    },
 ]
 
 const Navbar = () => {
@@ -33,10 +37,12 @@ const Navbar = () => {
     <header className='w-full mx-auto px-4 bg-white shadow fixed top-0 z-10 sm:px-20 dark:bg-stone-900 dark:border-b dark:border-stone-600'>
         <div className='justify-between md:item-center md:flex'>
             <div>
-                <div className='flex items-center justify-between py-3'>
-                    <div className='md:py-5 md:block'>
-                        <h2 className='text-2xl font-bold'>Alexander Weiss</h2>
+                <div className='flex items-center justify-between py-3 md:py-5 md:block'>
+                    <Link to='home'>
+                    <div className='container flex items-center space-x-2 cursor-pointer'>
+                        <h2 className='text-2xl font-bold hover:underline hover:cursor-pointer'>Alexander Weiss</h2>
                     </div>
+                    </Link>
                     <div className='md:hidden'>
                         <button onClick={()=>setNavbar(!navbar)}>
                             {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
@@ -44,7 +50,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='flex items-center justify-center'>
             <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}>
@@ -55,7 +61,7 @@ const Navbar = () => {
                         key={idx}
                         to={item.page}
                         className={
-                          "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
+                          "block lg:inline-block text-neutral-900 dark:text-neutral-100 hover:underline hover:cursor-pointer"
                         }
                         activeClass="active"
                         spy={true}
