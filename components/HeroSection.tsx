@@ -25,7 +25,7 @@ const HeroSection = () => {
                         Front End Web Developer{' '}
                     </span>
                 </p>
-                <a href='/proresume.pdf' target='_blank' className='text-3xl bg-blue-400 hover:bg-blue-300 rounded-lg p-2 shadow-lg font-semibold'>Resume</a>
+                <a href='/proresume.pdf' target='_blank' className="px-4 py-2 text-xl font-semibold text-white bg-blue-500 border border-blue-500 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Resume</a>
             </div>
         </div>
     </section>

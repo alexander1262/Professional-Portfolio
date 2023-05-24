@@ -15,7 +15,7 @@ const Form = () => {
 
   return (
     <div id='contact'>
-        <h1 className='text-4xl font-bold text-center hover:cursor-default'>Contact Me</h1>
+        <h1 className='text-4xl font-bold text-center hover:cursor-default mb-6 mt-10'>Contact Me</h1>
         <form onSubmit={handleSubmit} className='flex flex-col justify-center mb-5 items-center'>
             <div>
                 <input
@@ -53,7 +53,7 @@ const Form = () => {
                 ></textarea>
             </div>
             <div>
-                <button type="submit" disabled={state.submitting} className='border-1 border-black bg-blue-400 hover:bg-blue-300 text-2xl rounded-lg p-1'>Submit</button>
+                <button type="submit" disabled={state.submitting} className="px-4 py-2 text-lg font-semibold text-white bg-blue-500 border border-blue-500 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Submit</button>
             </div>
             {successMessage && <p>{successMessage}</p>}
             {errorMessage && <p>{errorMessage}</p>}
