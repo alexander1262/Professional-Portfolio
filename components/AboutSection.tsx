@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaReact } from 'react-icons/fa'
 
 const skills = [
     {skill:'HTML'},

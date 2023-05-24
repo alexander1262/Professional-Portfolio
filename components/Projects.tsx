@@ -75,7 +75,7 @@ function Projects() {
                   onMouseEnter={() => handleMouseOver(index)}
                   onMouseLeave={handleMouseOut}
                 >
-                  <Image src={project.image} alt={project.title} width={500} height={200} />
+                  <Image src={project.image} alt={project.title} width={500} height={200} className='border-2 border-black' />
                   {hoveredIndex === index && (
                     <div className="absolute bg-slate-400 bg-opacity-90 top-0 left-0 w-full h-full flex flex-col justify-center items-center">
                       <h2 className="md:text-3xl texl-3xl font-bold hover:cursor-default">{project.title}</h2>
