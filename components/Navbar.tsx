@@ -3,6 +3,9 @@ import { Link } from 'react-scroll/modules'
 import { useTheme } from 'next-themes'
 import { RiMoonFill, RiSunLine } from 'react-icons/ri'
 import { IoMdMenu, IoMdClose } from 'react-icons/io'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { HiOutlineMail } from 'react-icons/hi'
+import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 interface NavItem {
     label: string
@@ -85,6 +88,12 @@ const Navbar = () => {
                             </button>
                         )
                     }
+                    <div className='flex flex-row space-x-4 justify-center'>
+                        <FaLinkedin className='md:hidden text-blue-500' size={35} />
+                        <FaGithub className='md:hidden text-gray-500' size={35} />
+                        <HiOutlineMail className='md:hidden text-red-500' size={35} />
+                        <BsFillPersonLinesFill className='md:hidden text-purple-500' size={35} />
+                    </div>
                 </div>
                 </div>
             </div>

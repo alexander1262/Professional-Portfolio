@@ -14,7 +14,7 @@ const Form = () => {
   }
 
   return (
-    <div id='contact'>
+    <div id='contact' className='pb-9'>
         <h1 className='text-4xl font-bold text-center hover:cursor-default mb-6 mt-10'>Contact Me</h1>
         <form onSubmit={handleSubmit} className='flex flex-col justify-center mb-5 items-center'>
             <div>

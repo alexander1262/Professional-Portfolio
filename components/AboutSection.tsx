@@ -34,7 +34,7 @@ function AboutSection() {
             <div className='flex flex-col space-y-10 item-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10'>
                 <div className='md:w-1/2'>
                     <h1 className='text-center text-2xl font-bold mb-6 md:text-left hover:cursor-default'>Get to know me!</h1>
-                    <p className='hover:cursor-default'>My name is Alexander and I am a Front End Web Developer who loves to learn and is highly self-motivated. I enjoy coding a lot so learning new programming languages and mastering ones I know is an enjoyable way to spend my free time.</p>
+                    <p className='hover:cursor-default font-medium'>My name is Alexander and I am a Front End Web Developer who loves to learn and is highly self-motivated. I enjoy coding a lot so learning new programming languages and mastering ones I know is an enjoyable way to spend my free time.</p>
                 </div>
                 <div className='md:w-1/2'>
                     <h1 className='text-center text-2xl font-bold mb-6 md:text-left hover:cursor-default'>My Skills</h1>
