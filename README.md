@@ -13,6 +13,7 @@ Provide a short description explaining the what, why, and how of your project. U
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Technology](#technology)
 - [License](#license)
 - [Questions](#questions)
 
@@ -24,6 +25,16 @@ In order to run the application locally, run the command `npm run dev` in the te
 
 Simply go to the hosted domain linked below:
 https://www.alexanderweissportfolio.com/
+
+## Technology
+
+-React.js
+-Typescript
+-TailwindCSS
+-Next.js
+-Vercel
+-Node.js
+-VSCode
 
 ## License
 
